@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {margin: 0; padding: 0;}
+
+.aboutme_title {
+    height: 250px;
+    background-color: #f3f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.aboutme_title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #002d5b;
+    padding: 20px 0;
+}
+.horizontal-line {
+    width: 100px;
+    height: 2px;
+    background-color: #2fc1ff;
+}
+.title_section {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: #002d5b;
+}
+.title_section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #4c5253;
+    margin: 20px 0;
+}
+
+
+/*  ========================================== section == */
+.list_myportfolio {
+    padding: 1rem;
+    margin: 100px 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+.child {
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+}
+
+.child img {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.child:nth-child(4) {
+    grid-column: span 2;
+}
+.child:nth-child(4) img {
+    width: 600px;
+}
+
+.child:nth-child(6) {
+    grid-row: span 2;
+}
+.child:nth-child(6) img {
+    width: 300px;
+}
+
+.child:nth-child(9) {
+    grid-column: span 2;
+}
+.child:nth-child(9) img {
+    width: 600px;
+}
+
+
+
+/*  ========================================== section == */
+.getInTouch {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #f3f6f6, #f2f0f0);
+}
+
+.getintouch_container {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 120px 0 120px;
+    font-family: 'Playfair Display', serif;
+}
+.info_left_side {
+    font-weight: 600;
+    color: #101218;
+}
+.info_left_side h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.info_left_side h1 {
+    font-size: 80px;
+    text-decoration: underline;
+}
+.info_right_side {
+    display: flex;
+}
+.cta_getintouch {
+    margin-left: 60px;
+}
+.cta_getintouch a {
+    color: #4c5253;
+    text-decoration: none;
+}
+.cta_getintouch ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.cta_getintouch ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #4c5253;
+}
+
+
+footer {
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .header_section {
+        padding: 0;
+    }
+    section {
+        padding: 20px;
+        overflow-y: hidden;
+    }
+    .aboutme_title {
+        height: auto;
+    }
+    .aboutme_title h1 {
+        margin-top: 160px;
+    }
+    .horizontal-line {
+        margin-bottom: 50px;
+    }
+    .title_section {
+        text-align: center;
+    }
+
+
+
+    .list_myportfolio {
+        padding: 1rem;
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 2rem;
+        justify-content: space-evenly;
+    }
+
+    .child {
+        max-width: 330px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .list_myportfolio .child:nth-child(n) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .list_myportfolio .child:nth-child(n) img {
+        width: 330px
+    }
+
+    .getintouch_container {
+        align-items: center;
+        text-align: center;
+        margin: 50px 0;
+
+    }
+    .info_left_side h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .info_right_side {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta_getintouch {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+}

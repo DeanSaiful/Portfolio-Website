@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Open Sans', sans-serif; */
+* {margin: 0; padding: 0;}
+
+.aboutme_title {
+    height: 250px;
+    background-color: #f3f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.aboutme_title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #002d5b;
+    padding: 20px 0;
+}
+.horizontal-line {
+    width: 100px;
+    height: 2px;
+    background-color: #2fc1ff;
+}
+
+
+/*  ========================================== about me page section == */
+.aboutme_section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0;
+}
+.aboutme_topside {
+    width: 1200px;
+    margin-bottom: 30px;
+}
+.aboutme_topside h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #4c5253;
+    margin: 20px 0;
+}
+.aboutme_topside h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #002d5b;
+}
+.aboutme_bottomside {
+    width: 1200px;
+    display: flex;
+    margin: 20px 0;
+}
+.left_side, .right_side{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.left_side {
+    align-items: center;
+}
+.image_contents {
+    height: 300px;
+    width: 350px;
+    background-color: blueviolet;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    border: none;
+}
+.image_contents img {
+    height: 100%;
+}
+.right_side {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #4c5253;
+    letter-spacing: 0.5px;
+}
+
+
+/*  ========================================== skillset page section == */
+
+.skillset_section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+.skillset_container {
+    width: 1200px;
+    display: flex;
+}
+.skill_content {
+    width: 50%;
+}
+.skill_content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.skill_content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 20px 50px 0 0;
+
+}
+
+
+.percentage-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+  
+.bar {
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.bar-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+  
+.bar-fill {
+    height: 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50px;
+    width: 0;
+    transition: width 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding-right: 5;
+}
+.outline-bar {
+    width: 100%;
+    background-color: #eeeeee;
+    border-radius: 50px;
+}
+
+
+/*  ========================================== testimonials page section == */
+.testimonial_section {
+    background: linear-gradient(to bottom right, #f3f6f6, #f2f0f0);
+}
+.title_section {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: #101218;
+}
+.title_section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #4c5253;
+    margin: 20px 0;
+}
+
+.testimonial_container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+.cluster{
+    width: 1200px;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.child {
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+}
+.test_content {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.test_content span {
+    font-size: 30px;
+    color: #2fc1ff;
+}
+.client_img {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #2fc1ff;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 30px 0;
+}
+.client_img img {
+    width: 100%;
+}
+.test_content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #4c5253;
+    /* margin-bottom: 40px; */
+}
+
+.test_content .horizontal-line {
+    width: 50px;
+    margin: 40px 0 20px;
+}
+
+
+/*  ========================================== testimonial section == */
+
+.getInTouch {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.getintouch_container {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 120px 0 120px;
+    font-family: 'Playfair Display', serif;
+}
+.info_left_side {
+    font-weight: 600;
+    color: #101218;
+}
+.info_left_side h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.info_left_side h1 {
+    font-size: 80px;
+    text-decoration: underline;
+}
+.info_right_side {
+    display: flex;
+}
+.cta_getintouch {
+    margin-left: 60px;
+}
+.cta_getintouch a {
+    color: #4c5253;
+    text-decoration: none;
+}
+.cta_getintouch ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.cta_getintouch ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #4c5253;
+}
+
+
+footer {
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .header_section {
+        padding: 0;
+    }
+    section {
+        padding: 20px;
+        overflow-y: hidden;
+    }
+    .aboutme_title {
+        height: auto;
+    }
+    .aboutme_title h1 {
+        margin-top: 160px;
+    }
+    .horizontal-line {
+        margin-bottom: 50px;
+    }
+
+    .aboutme_topside {
+        width: 100%;
+    }
+    .aboutme_topside h1 {
+        font-size: 22px;
+    }
+    .aboutme_topside h3 {
+        font-size: 20px;
+    }
+    .aboutme_bottomside {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .image_contents {
+        width: 80%;
+    }
+
+    .skillset_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skill_content {
+        width: 100%;
+    }
+    .skill_content p {
+        margin: 0;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .percentage-bars {
+        margin-right: 0;
+    }
+    .left_side, .right_side{
+        width: 100%;
+    }
+    .right_side {
+        margin-top: 20px;
+    }
+    .title_section {
+        text-align: center;
+    }
+
+    .testimonial_container {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 0 0 50px;
+    }
+    
+    .cluster{
+        gap: 0;
+    }
+
+    
+    .getintouch_container {
+        align-items: center;
+        text-align: center;
+        margin: 50px 0;
+
+    }
+    .info_left_side h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .info_right_side {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta_getintouch {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+
+}
